@@ -5,16 +5,30 @@
 
 <web-app>
 
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+
   <!-- Servlets -->
   <servlet>
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>fr.ippon.gwt.server.GreetingServiceImpl</servlet-class>
   </servlet>
 
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.gwtrpcspring.RemoteServiceDispatcher</servlet-class>
+	</servlet>
+
   <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
+<!--     <servlet-name>greetServlet</servlet-name> -->
+    <servlet-name>dispatcher</servlet-name>
     <url-pattern>/GWTSample/greet</url-pattern>
   </servlet-mapping>
+  
+
 
   <!-- Default page to serve -->
   <welcome-file-list>

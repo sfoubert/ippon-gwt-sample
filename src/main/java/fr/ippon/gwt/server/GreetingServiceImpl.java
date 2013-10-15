@@ -1,13 +1,17 @@
 package fr.ippon.gwt.server;
 
+import org.springframework.stereotype.Service;
+
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
 import fr.ippon.gwt.client.GreetingService;
 import fr.ippon.gwt.shared.FieldVerifier;
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
  * The server side implementation of the RPC service.
  */
 @SuppressWarnings("serial")
+@Service("greetService")
 public class GreetingServiceImpl extends RemoteServiceServlet implements
     GreetingService {
 
