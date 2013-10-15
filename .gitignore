@@ -1,0 +1,7 @@
+/.settings
+/target
+/src/main/webapp/WEB-INF/classes
+/src/main/gwt-unitCache
+/src/main/webapp/fr.ippon.gwt.GWTSampleJUnit
+/src/main/webapp/GWTSample
+/src/main/webapp/WEB-INF/deploy
