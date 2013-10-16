@@ -12,10 +12,10 @@
 	</listener>
 
   <!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>fr.ippon.gwt.server.GreetingServiceImpl</servlet-class>
-  </servlet>
+<!--   <servlet> -->
+<!--     <servlet-name>greetServlet</servlet-name> -->
+<!--     <servlet-class>fr.ippon.gwt.server.GreetingServiceImpl</servlet-class> -->
+<!--   </servlet> -->
 
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
